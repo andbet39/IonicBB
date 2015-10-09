@@ -1,0 +1,15 @@
+<ion-view view-title="Bookings">
+  <ion-nav-buttons side="secondary">
+    <button class="button button-icon icon ion-ios-search-strong" ng-click="showFilterBar()">
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content>
+    <ion-list>
+      <a class="item" ng-repeat="res in reservations" href="#/app/booking/{{res.reservation_code}}">
+       <h2> {{res.customer_name + " "+ res.customer_surname}}</h2>
+        <p><span class="ion-ios-home"></span> {{res.date_arrival | amDateFormat:'DD/MM/YYYY'}} <span class="ion-ios-home-outline"></span> {{res.date_departure | amDateFormat:'DD/MM/YYYY'}}</p>
+      </a>
+    </ion-list>
+  </ion-content>
+</ion-view>

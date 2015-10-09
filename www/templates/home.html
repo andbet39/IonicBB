@@ -1,0 +1,45 @@
+<ion-view view-title="Bookings">
+  <ion-nav-buttons side="secondary">
+    <button class="button button-icon icon ion-ios-search-strong">
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content>
+    <ion-list>
+      <div class="item item-divider">
+        Check-in
+      </div>
+
+      <a class="item" ng-repeat="res in checkin" href="#/app/booking/{{res.reservation_code}}">
+        <h2> {{res.customer_name + " "+ res.customer_surname}}</h2>
+
+        <p><span class="ion-ios-home"></span> {{res.date_arrival | amDateFormat:'DD/MM/YYYY'}} <span
+          class="ion-ios-home-outline"></span> {{res.date_departure | amDateFormat:'DD/MM/YYYY'}}</p>
+      </a>
+
+      <div class="item item-divider">
+        Check-out
+      </div>
+
+
+      <a class="item" ng-repeat="res in checkout" href="#/app/booking/{{res.reservation_code}}">
+        <h2> {{res.customer_name + " "+ res.customer_surname}}</h2>
+
+        <p><span class="ion-ios-home"></span> {{res.date_arrival | amDateFormat:'DD/MM/YYYY'}} <span
+          class="ion-ios-home-outline"></span> {{res.date_departure | amDateFormat:'DD/MM/YYYY'}}</p>
+      </a>
+
+      <div class="item item-divider">
+        Ricevute
+      </div>
+
+      <a class="item" ng-repeat="res in received" href="#/app/booking/{{res.reservation_code}}">
+        <h2> {{res.customer_name + " "+ res.customer_surname}}</h2>
+
+        <p><span class="ion-ios-home"></span> {{res.date_arrival | amDateFormat:'DD/MM/YYYY'}} <span
+          class="ion-ios-home-outline"></span> {{res.date_departure | amDateFormat:'DD/MM/YYYY'}}</p>
+      </a>
+    </ion-list>
+  </ion-content>
+</ion-view>
+

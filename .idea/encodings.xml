@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/www/js/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/js/bookingController.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/js/controllers.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/js/directives/room.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/js/directives/telephoneprefix.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/js/homeController.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/js/loginController.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/js/services/auth.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/booking.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/bookings.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/directives/room_list.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/home.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/loginBase.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/menu.html" charset="UTF-8" />
+  </component>
+</project>

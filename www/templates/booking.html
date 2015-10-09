@@ -1,0 +1,70 @@
+<ion-view view-title="{{reservation.customer_name}} {{reservation.customer_surname}}">
+  <ion-content>
+    <div class="list">
+
+      <div class="item item-divider">
+        Cliente
+      </div>
+      <div class="item item-icon-left" href="#">
+        <i class="icon ion-person"></i>
+        {{reservation.customer_name}} {{reservation.customer_surname}}
+      </div>
+
+      <div class="item item-icon-left" href="#">
+        <i class="icon ion-chatbubble-working"></i>
+        <prefix country="reservation.customer_country"></prefix>{{reservation.customer_phone}}
+          <span class="item-note">
+          Telefono
+         </span>
+      </div>
+      <div class="item item-icon-left" href="#">
+        <i class="icon ion-email"></i>
+        {{reservation.customer_mail}}
+         <span class="item-note">
+         Email
+         </span>
+      </div>
+
+      <div class="item item-divider">
+        Prenoatzione
+      </div>
+
+      <div class="item item-icon-left" href="#">
+        <i class="icon ion-ios-barcode-outline"></i>
+        {{reservation.reservation_code}}
+         <span class="item-note">
+         Reservation code
+         </span>
+      </div>
+      <div class="item item-icon-left" href="#">
+        <i class="icon ion-ios-home"></i>
+        {{reservation.date_arrival| amDateFormat:'DD/MM/YYYY'}}
+         <span class="item-note">
+         Check-in
+         </span>
+      </div>
+      <div class="item item-icon-left" href="#">
+        <i class="icon ion-ios-home-outline"></i>
+       {{reservation.date_departure| amDateFormat:'DD/MM/YYYY'}}
+         <span class="item-note">
+          Check-out
+         </span>
+      </div>
+      <div class="item item-icon-left" href="#">
+        <i class="icon ion-social-euro"></i>
+        {{reservation.amount | currency:'€ '}}
+        <span class="item-note">
+          Totale
+         </span>
+      </div>
+      <div class="item item-icon-left" href="#">
+        <i class="icon ion-ios-locked-outline"></i>
+        <room rooms="reservation.rooms"  list="roomList"></room>
+        <span class="item-note">
+          Camere
+         </span>
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>
